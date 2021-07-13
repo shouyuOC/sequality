@@ -9,6 +9,13 @@ public class App {
     }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+      int x=2, y=3, a=1, b=10;
+      Calculate calculate = new Calculate();
+      System.out.println(new App().getGreeting());
+      System.out.println("Sum of "+x+" and "+y+" is "+calculate.sum(x, y)+". Average is "+calculate.ave(x, y)+".");
+      System.out.println("Sum of "+a+" to "+b+" is "+calculate.SumRange(a, b)+". Average is "+calculate.AveRange(a, b)+".");
+      System.out.println("Sum of odd of"+a+" to "+b+" is "+calculate.SumOdd(a, b)+". Sum of even is "+calculate.SumEven(a, b)+".");
+
+
     }
 }
